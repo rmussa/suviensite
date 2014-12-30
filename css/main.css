@@ -1,0 +1,426 @@
+
+
+body {
+  /*background-color: #f2f2f2;*/
+    font-family: "Raleway";
+    /*font-weight: 300;*/
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.logo {
+    max-height: 57px;
+}
+
+/* nav */
+.nav {
+    font-family: "Raleway";
+    font-weight: 600;
+    color: black;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #597EBA;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#topbar-inner {
+	/*background: #111;*/
+	line-height: 0;
+	text-align: center;
+	position: fixed;
+	background-color:rgba(255,255,255,1); 
+	padding: 18px; 
+	color: #474a4f; 
+	position: fixed; 
+	width: 100%; 
+	z-index: 500; 
+	height: auto; 
+	-moz-box-shadow: 0 1px 8px #000; 
+	-webkit-box-shadow: 0 1px 8px #000; 
+	box-shadow: 0 1px 8px #000;
+}
+
+#topbar-inner nav {
+    /*text-align: right; */
+    padding-top: 28px;  
+    padding-right: 20px;
+    font-family: "Raleway";
+    font-weight: 400; 
+    font-size: 15px;
+}
+#topbar-inner ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+#topbar-inner li
+{
+    display:inline;
+    padding-left: 20px;
+    font-size: 1.2em;
+    color: #84A3D0;
+    font-family: "Raleway";
+    font-weight: 500;
+}
+/*
+	Top Bar
+
+	By default, top navigation bar uses "fixed" position
+*/
+#section-topbar ul#nav {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+	border-right: 1px solid #222;
+
+	/* For IE, the outcast */
+	zoom:1;
+	*display: inline;
+}
+
+#section-topbar ul#nav > li {
+	display: block;
+    float: left;
+    padding: 0;
+}
+
+
+#section-topbar ul#nav a {
+  display: block;
+  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  padding: 18px 20px 18px 20px;
+  border-left: 1px solid #222;
+}
+
+	#section-topbar ul#nav a:hover {
+	  background: #222;
+	  text-decoration: none;
+	  border-left: 1px solid #111;
+	}
+
+	#section-topbar ul#nav .active a {
+		background: #44bbaa;
+		border-left: 1px solid #111;
+	}
+
+		#section-topbar ul#nav .active a:hover {
+			background: #44bbaa;
+		}
+#section-topbar i {
+	font-size: 25px;
+}
+
+#headerwrap {
+	/*background: url(../img/Suvien.jpg) no-repeat center top;*/
+	/*margin-top: 50px;*/
+	/*padding-top:140px;*/
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 87px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	font-size: 80px;
+	color: black;
+}
+
+#headerwrap h3 {
+	font-size: 20px;
+	color: black;
+}
+
+.container {
+    padding-top: 134px;
+    margin-left: -16px;
+    width: 1500px;
+}
+
+.jumbotron {
+    background: url(../img/Suvien.jpg) no-repeat center top;
+}
+
+#myCarousel {
+    min-height: 100px;
+}
+
+.item{
+    /*background: #fff;    */
+    text-align: center;
+    font-family: Raleway;
+    /*background: url(../img/suvienguy.png) no-repeat center top;*/
+    height: 550px !important;
+}
+
+.carousel2{
+    left: 60%;
+    right: 3%;
+    text-align: right;
+    text-shadow: none;
+    bottom: 10%;
+}
+
+.carousel3{
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    right: 66%;
+    text-align: left;
+    text-shadow: none;
+    background: rgba(111, 114, 119, 0.66);
+    padding: 7% 5%;
+    width: 458px;
+}
+
+.mainpic {
+    padding-right: 15px;
+    margin-top: -42px;
+}
+
+.bodyabout h2 {
+    /*padding: 5%;*/
+    /*background: url(../img/SuvienTablet1.png) no-repeat center top;*/
+    color: white;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.bodyabout p{
+    line-height: 28px;
+    color: white;
+}
+
+.bodyabout img {
+    display: block;
+}
+
+.bodyabout a {
+    color: #333;
+}
+
+.bodyabout a:hover {
+    color: black;
+}
+
+.experience {
+    padding: 6% 5% 2% 5%;
+}
+
+.tabimg {
+    max-height: 380px;
+    overflow: hidden;
+}
+
+.bodyabout {
+    background: #98B3DA;
+    max-height: 380px;
+    /*padding: 5% 5%;*/
+}
+
+.bodyfeatures {
+    padding: 5%;
+    text-align: center;
+}
+
+.bodyfeatures p {
+    line-height: 28px;
+    font-weight: 500;
+    color: #84a3d0;
+}
+
+.bodyfeatures h1 {
+    font-size: 3em;
+    color: #84A3D0;
+}
+
+.bodyfeatures h2 {
+    color: #84A3D0;
+}
+
+.bodyfeatures img {
+    color: rgba(132,163,208,1)
+}
+
+.divider {
+    display: block;
+    margin: 0 auto;
+}
+
+.bodyproduct{
+    padding: 7% 5% 5% 5%;
+    /*background: #84A3D0;*/
+}
+
+.bodyproduct p{
+    color: #84A3D0;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.bodyproduct h1{
+    color: #84A3D0;
+    font-weight: 400;
+}
+
+.infoimg {
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.bodynews {
+    padding: 6% 5% 3% 5%;
+    text-align: center;
+    background: #98B3DA;
+}
+
+.bodynews h1 {
+    font-size: 3em;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.bodynews h4,  .bodynews p{
+    color: white;
+    padding: 10px;
+}
+
+.bodypartners {
+    padding: 2% 5%;
+    background: white;
+}
+
+.bodypartners h1 {
+    font-size: 3em;
+    padding-bottom: 15px;
+}
+.bodypartners {
+    text-align: center;
+}
+
+.partners img {
+    margin: 0 auto;
+    width: auto;
+    height: 80px;
+}
+
+.social img {
+    margin: 0 auto;
+    width: auto;
+    height: 80px;
+}
+.suvvid {
+    width: 100%;
+    position: relative;
+    padding: 1%;
+}
+
+.suvvid iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+#about{
+    color: white;
+}
+
+.circle{
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 33px;
+    width: 150px;
+    height: 150px;
+    /*border: 2px solid #ffffff;*/
+    border-radius: 100%;
+    border-color: #fff;
+    text-align: center;
+    
+}
+
+.icon {
+    margin-left: 24px;
+}
+
+.social a:hover{
+    color: #84a3d0;
+}
+
+@media screen and (max-width: 892px) {
+
+    #topbar-inner nav {
+        text-align: center; 
+    }
+
+    .tabimg {
+        visibility: hidden;
+    }
+}

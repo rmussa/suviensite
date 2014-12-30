@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Suvien</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="icon" href="img/suvien.ico" type="image/x-icon" />
+
+	<script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/suvien.js"></script>
+    <script src="js/angular_suvien.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body ng-app data-spy="scroll" data-offset="0" data-target="#nav">
+
+	<div id="headerwrap">
+		<div id="topbar-inner" role="banner">
+			<div class="col-lg-2">
+				<a class="smoothScroll" href="#home" title="home">
+				<img class="img-responsive center-block logo" src="img/suvien-logo2.png" alt="">
+				</a>
+			</div>
+			<div class="col-lg-5 col-lg-offset-5">
+				<nav>
+				    <ul>
+				        <li><a class="smoothScroll" href="#about" title="About">ABOUT</a></li>
+				        <li><a class="smoothScroll" href="#product" title="Product">PRODUCT</a></li>
+				        <li><a class="smoothScroll" href="#news" title="News">NEWS</a></li>
+				        <li><a class="smoothScroll" href="#contact" title="Contact">CONTACT</a></li>
+				    </ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<section id="home" name="home"></section>
+	<!-- Use Carousel without left/right arrows, main image is active item -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="row mainpic"><img class="img-responsive" src="img/SuvienMain2.png" alt="First slide"></div>
+          <div class="container">
+            <div class="carousel2 carousel-caption">
+              <h1>A patient-centred solution</h1>
+              <!-- <p>Persons with dementia should feel at home wherever they are</p> -->
+              <p>Suvien is an app for persons with Alzheimer’s disease and other causes of dementia that displays their photos and memories, uploaded by family members.</p>
+              <p>
+	              <a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
+	              <a class="btn btn-lg btn-default" href="#" role="button">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<section id="about" name="about"></section>
+
+	  <div class="bodyabout">
+	    <div class="row">
+			<div class="col-md-7 experience">
+				<h2>From Personal Experience to Patient Experience</h2>
+	            <br/>
+	            <p>Alzheimer's disease has touched our lives in different ways. Our team at <a href="http://lansa.com">LANSA</a> wanted to better the lives of patients with dementia by creating something which would help them remember. This lead to the creation of a non-profit, Suvien, where we utilize new technology to show patients their very own story. </p>
+			</div>
+			<div class="col-md-5 tabimg">
+				<img class="img-responsive" src="img/SuvTablet.png">
+			</div>
+	   </div>
+	 </div>
+
+	  <section id="product" name="product"></section>
+
+	 <div class="bodyproduct">
+		<div class="row">
+			<div class="col-md-5 infoimg">
+				<img class="img-responsive center-block" src="img/SuvienInfo2.png">
+			</div>
+			<div class="col-md-7">
+				<h1>Leveraging Web and Mobile Technology</h1>
+	            <br/>
+	            <p>Suvien helps patients with dementia recall memories of their lives and loved ones. Family and friends can upload the patient's photos and memories to the Suvien application. Patients use the tablet app where they can touch a photo to read captions and launch music, video or voice messages. This provides familiarity and comfort for them, by drawing out memories from their own life history.</p>
+	            <p>That's how they will feel at ease and at home</p>
+			</div>
+	   </div>
+	  </div>
+	  
+	  <img class="divider" src="img/divider.png">
+
+	  <div class="bodyfeatures" ng-controller="sFeatures">
+		  <div class="row">
+	  	  	<h1>Benefits of Suvien</h1>
+	  	  </div>
+		    <div class="row">
+			    <div ng-repeat="feature in features">
+			      <div class="col-md-4">
+					  <div class="circle">
+					  	<img class="img-responsive icon" src={{feature.src}}>
+					  </div>
+					  <h2>{{feature.title}}</h2>
+					  <p>{{feature.description}}</p>
+				  </div>
+			    </div>
+		    </div>
+		</div>
+
+	  <section id="news" name="news"></section>
+	  <div class="bodynews">
+		  <div class="row">
+				  <h1>The Future of Neuroscience</h1>
+				  <h4>TVO's The Agenda discusses how Suvien helps new research and projects undertaken by the Ontario Brain Institute.</h4>
+				  <div class="suvvid">
+					  <iframe width="760" height="500" src="http://www.youtube.com/embed/L4D02tSc0bM" frameborder="0" allowfullscreen></iframe>
+					  <p>Steve Collins of LANSA and David Herway of OBI discuss Suvien</p>
+				  </div>
+		  </div>
+	  </div>
+
+	  <section id="contact" name="contact"></section>
+	  <div class="bodypartners">
+		  <div class="row">
+				  <div class="row partners">
+				  	<h1>OUR PARTNERS</h1>
+				  	<div class="col-md-6">
+				  		<a href="http://www.braininstitute.ca" target="_blank"><img class="img-responsive" src="img/Logo_OBI.jpg"></a>
+				  	</div>
+					<div class="col-md-6">
+				  		<a href="http://www.alzheimers.ca/en/on" target="_blank"><img class="img-responsive" src="img/Logo_Alz.jpg"></a>
+				  	</div>
+				  </div>
+				  <br/>
+<!-- 				  <div class="row team">
+				  	<h3>Suvien Team Members</h3>
+				  	<div class="row">
+					  	<div class="col-md-3">
+					  		<p>Steve Collins</p>
+					  	</div>
+					  	<div class="col-md-3">
+					  		<p>Paul MacDonald</p>
+					  	</div>
+					  	<div class="col-md-3">
+					  		<p>Rahim Lalani</p>
+					  	</div>
+				  	</div>
+				  	<div class="row">
+					  	<div class="col-md-3">
+					  		<p>Steve Collins</p>
+					  	</div>
+					  	<div class="col-md-3">
+					  		<p>Paul MacDonald</p>
+					  	</div>
+					  	<div class="col-md-3">
+					  		<p>Rahim Lalani</p>
+					  	</div>
+				  	</div>
+				  	<div class="row">
+					  	<div class="col-md-3">
+					  		<p>Steve Collins</p>
+					  	</div>
+					  	<div class="col-md-3">
+					  		<p>Paul MacDonald</p>
+					  	</div>
+					  	<div class="col-md-3">
+					  		<p>Rahim Lalani</p>
+					  	</div>
+				  	</div>
+				  </div> -->
+
+				  <p>Our project connected with The Ontario Brain Institute and the Alzheimer Society Ontario, who welcomed the project's facilitation and growth. Alzheimer Society Peel generously opened their doors to a Suvien pilot project at the Just For You program for seniors in the Peel region. Both the Ontario Brain Institute and Alzheimer Society Ontario have committed their time, effort, and resources to pilot this project with the Alzheimer Society Peel.</p>
+
+				  <p>Special thanks to Medical Mart, Sature Graphics, and to all individuals who have touched Suvien.</p>
+		  </div>
+		  <div class="row social">
+		  	<div class="col-md-2 col-md-offset-3">
+		  		<a href="mailto:raheem.mussa@suvien.com"><img class="img-responsive" src="img/mail_suv.png"></a>
+		  	</div>
+		  	<div class="col-md-2">
+		  		<a href="http://facebook.com/suvienapp" target="_blank"><img class="img-responsive" src="img/fb_suv.png"></a>
+		  	</div>
+		  	<div class="col-md-2">
+		  		<a href="http://twitter.com/suvienapp" target="_blank"><img class="img-responsive" src="img/t_suv.png"></a>
+		  	</div>
+		  </div>
+	  </div>
+
+</body>
+</html>
